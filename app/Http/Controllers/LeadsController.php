@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Models\Lead;
+use App\Lead;
 
 class LeadsController extends Controller
 {
@@ -43,7 +43,6 @@ class LeadsController extends Controller
             'email' => $data['email'],
             'date_of_birth' => $data['date_of_birth'],
             'phone' => $data['phone'],
-            'age' => 1,
             'branch_id' => 1,
             'user_id' => Auth::user()->id,
             'package' => $package,
