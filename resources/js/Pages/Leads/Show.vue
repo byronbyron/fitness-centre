@@ -33,7 +33,8 @@
                     </div>
                 </div>
 
-                <button class="btn btn-primary">Save</button>
+                <button class="btn btn-primary mr-2">Save</button>
+                <inertia-link class="btn btn-link" :href="$route('lead.index')">Back</inertia-link>
             </form>
         </div>
     </layout>

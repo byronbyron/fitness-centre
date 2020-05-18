@@ -2123,6 +2123,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2157,6 +2161,7 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
 //
 //
 //
@@ -60228,7 +60233,47 @@ var render = function() {
                     _vm._v(_vm._s(_vm.moment(lead.created_at).fromNow()))
                   ]),
                   _vm._v(" "),
-                  _c("td")
+                  _c(
+                    "td",
+                    [
+                      _c(
+                        "inertia-link",
+                        {
+                          attrs: {
+                            href: _vm.$route("lead.show", { lead: lead })
+                          }
+                        },
+                        [
+                          _c(
+                            "svg",
+                            {
+                              staticClass:
+                                "svg-inline--fa fa-angle-right fa-w-8",
+                              attrs: {
+                                "aria-hidden": "true",
+                                focusable: "false",
+                                "data-prefix": "fas",
+                                "data-icon": "angle-right",
+                                role: "img",
+                                xmlns: "http://www.w3.org/2000/svg",
+                                viewBox: "0 0 256 512"
+                              }
+                            },
+                            [
+                              _c("path", {
+                                attrs: {
+                                  fill: "currentColor",
+                                  d:
+                                    "M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+                                }
+                              })
+                            ]
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  )
                 ])
               }),
               0
@@ -60416,8 +60461,20 @@ var render = function() {
             ])
           ]),
           _vm._v(" "),
-          _c("button", { staticClass: "btn btn-primary" }, [_vm._v("Save")])
-        ]
+          _c("button", { staticClass: "btn btn-primary mr-2" }, [
+            _vm._v("Save")
+          ]),
+          _vm._v(" "),
+          _c(
+            "inertia-link",
+            {
+              staticClass: "btn btn-link",
+              attrs: { href: _vm.$route("lead.index") }
+            },
+            [_vm._v("Back")]
+          )
+        ],
+        1
       )
     ])
   ])
@@ -73183,6 +73240,11 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(_inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__["InertiaApp"]);
+
+vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.$route = function () {
+  return route.apply(void 0, arguments).url();
+};
+
 vue__WEBPACK_IMPORTED_MODULE_1___default.a.prototype.moment = moment__WEBPACK_IMPORTED_MODULE_2___default.a;
 var app = document.getElementById('app');
 
