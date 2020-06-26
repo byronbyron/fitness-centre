@@ -3,6 +3,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <inertia-link class="navbar-brand" href="/">FitApp</inertia-link>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,7 +31,7 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#" @click="handleLogout">Logout</a>
+                                <a class="dropdown-item" href="/logout" @click.prevent="handleLogout">Logout</a>
                             </div>
                         </li>
                     </ul>

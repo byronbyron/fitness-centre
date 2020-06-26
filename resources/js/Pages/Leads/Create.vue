@@ -52,6 +52,7 @@ export default {
                 'email': '',
                 'phone': '',
                 'date_of_birth': '',
+                'age': '',
                 'package': ''
             }
         }
@@ -59,7 +60,7 @@ export default {
 
     methods: {
         async handleSubmit() {
-            let response = await this.$inertia.post('/leads', this.lead)
+            let response = await this.$inertia.post('/leads/save', this.lead)
         }
     }
 };

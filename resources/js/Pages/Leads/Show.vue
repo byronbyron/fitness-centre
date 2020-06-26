@@ -33,7 +33,7 @@
                     </div>
                 </div>
 
-                <button class="btn btn-primary mr-2">Save</button>
+                <button class="btn btn-primary mr-2">Update</button>
                 <inertia-link class="btn btn-link" :href="$route('lead.index')">Back</inertia-link>
             </form>
         </div>
@@ -68,7 +68,7 @@ export default {
 
     methods: {
         async handleSubmit() {
-
+            let response = await this.$inertia.post('/leads', this.lead)
         }
     }
 };

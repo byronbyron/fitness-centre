@@ -2,11 +2,9 @@ require('./bootstrap');
 
 import { InertiaApp } from '@inertiajs/inertia-vue'
 import Vue from 'vue'
-import moment from 'moment'
 
 Vue.use(InertiaApp)
 Vue.prototype.$route = (...args) => route(...args).url();
-Vue.prototype.moment = moment;
 
 const app = document.getElementById('app')
 

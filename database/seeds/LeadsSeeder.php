@@ -17,6 +17,7 @@ class LeadsSeeder extends Seeder
             'phone' => '01234567890',
             'package' => 'Annual package',
             'date_of_birth' => '1990-10-08',
+            'age' => 29,
             'user_id' => 1,
             'branch_id' => 1,
         ]);
@@ -27,6 +28,7 @@ class LeadsSeeder extends Seeder
             'phone' => '09876543210',
             'package' => 'Annual package',
             'date_of_birth' => '1991-11-09',
+            'age' => 28,
             'user_id' => 1,
             'branch_id' => 1,
         ]);
@@ -37,6 +39,7 @@ class LeadsSeeder extends Seeder
             'phone' => '01234345623',
             'package' => 'Monthly package',
             'date_of_birth' => '1993-03-17',
+            'age' => 26,
             'user_id' => 1,
             'branch_id' => 1,
         ]);

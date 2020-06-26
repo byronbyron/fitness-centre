@@ -10933,3 +10933,8 @@ a.text-dark:focus {
   }
 }
 
+.svg-inline--fa {
+  width: 1rem;
+  height: 1rem;
+}
+

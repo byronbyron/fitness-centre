@@ -20,6 +20,7 @@ class CreateLeadsTable extends Migration
             $table->string('phone');
             $table->string('package')->nullable();
             $table->date('date_of_birth');
+            $table->integer('age');
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('branch_id');
             $table->timestamps();
