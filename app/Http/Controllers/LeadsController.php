@@ -66,6 +66,8 @@ class LeadsController extends Controller
 
     public function show(Lead $lead)
     {
+        $lead->load(['reminders']);
+
         return Inertia::render('Leads/Show', ['lead-prop' => $lead]);
     }
 
