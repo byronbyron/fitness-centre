@@ -64,11 +64,11 @@ class LeadsController extends Controller
         return redirect()->route('lead.index');
     }
 
-    public function show(Lead $lead)
+    public function view(Lead $lead)
     {
         $lead->load(['reminders']);
 
-        return Inertia::render('Leads/Show', ['lead-prop' => $lead]);
+        return Inertia::render('Leads/View', ['lead-prop' => $lead]);
     }
 
     public function update(Request $request)

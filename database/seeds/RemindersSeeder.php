@@ -31,7 +31,7 @@ class RemindersSeeder extends Seeder
         ]);
 
         Reminder::create([
-            'lead_id' => 3,
+            'lead_id' => 2,
             'user_id' => 1,
             'reminder' => 'A reminder to call the customer again.',
             'reminder_date' => Carbon::now()->subDays(2),
