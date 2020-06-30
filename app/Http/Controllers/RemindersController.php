@@ -70,7 +70,7 @@ class RemindersController extends Controller
         ]);
 
         $reminder = Reminder::find($data['reminder_id']);
-        $reminder->note = $postData['note'];
+        $reminder->note = $data['note'];
         $reminder->status = 'completed';
         $reminder->save();
 
